@@ -1,5 +1,5 @@
 name: Code Quality
-run-name: Test, Lint, and Check Formatting on PR #${{ github.event.pull_request.number }}
+run-name: Test, Lint, and Check Formatting on PR ${{ github.event.pull_request.number }}
 on: [pull_request]
 # This workflow is triggered on pull requests to the main branch.
 jobs:
@@ -13,6 +13,16 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: v2.x
+
+      - name: Cache Deno dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/deno
+            ~/.deno
+          key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.json') }}
+          restore-keys: |
+            ${{ runner.os }}-deno-
 
       - name: Check formatting
         run: deno fmt --check .
