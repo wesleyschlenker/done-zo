@@ -38,3 +38,5 @@ To-Do List App featuring AI Suggestions
 1. Clone the repository
 2. [Install Deno](https://docs.deno.com/runtime/#install-deno) and
    [setup your environment](https://docs.deno.com/runtime/getting_started/setup_your_environment/)
+3. Start developing with `deno task start`. This will watch the project
+   directory and restart as necessary.
