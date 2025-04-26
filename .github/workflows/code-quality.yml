@@ -1,7 +1,7 @@
 name: Code Quality
 run-name: Test, Lint, and Check Formatting on PR #${{ github.event.pull_request.number }}
 on: [pull_request]
-
+# This workflow is triggered on pull requests to the main branch.
 jobs:
   test-lint-format:
     runs-on: ubuntu-latest
