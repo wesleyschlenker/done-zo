@@ -1,6 +1,6 @@
 name: Code Quality
-run-name: Test, Lint, and Check Formatting on ${{ github.ref_name }}
-on: [push]
+run-name: Test, Lint, and Check Formatting on PR #${{ github.event.pull_request.number }}
+on: [pull_request]
 
 jobs:
   test-lint-format:
