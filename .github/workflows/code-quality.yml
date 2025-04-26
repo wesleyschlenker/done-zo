@@ -1,7 +1,14 @@
 name: Code Quality
 run-name: Test, Lint, and Check Formatting on PR ${{ github.event.pull_request.number }}
 on: [pull_request]
-# This workflow is triggered on pull requests to the main branch.
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+  checks: write # Needed for test results
+  statuses: write # Needed for Codecov status updates
+
 jobs:
   test-lint-format:
     runs-on: ubuntu-latest
@@ -31,4 +38,14 @@ jobs:
         run: deno lint
 
       - name: Run tests
-        run: deno test
+        run: deno test --coverage=coverage
+
+      - name: Generate coverage report
+        run: deno coverage ./coverage --lcov > coverage.lcov
+        # Continue on error until we actually have test covered files
+        continue-on-error: true
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage.lcov
