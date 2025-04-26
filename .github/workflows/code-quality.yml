@@ -1,0 +1,24 @@
+name: Code Quality
+run-name: Test, Lint, and Check Formatting on ${{ github.ref_name }}
+on: [push]
+
+jobs:
+  test-lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v2.x
+
+      - name: Check formatting
+        run: deno fmt --check .
+
+      - name: Run linting
+        run: deno lint
+
+      - name: Run tests
+        run: deno test
