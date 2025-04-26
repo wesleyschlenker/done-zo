@@ -2,17 +2,21 @@
     For Work In Progress Pull Requests, please use the Draft PR feature,
     see https://github.blog/2019-02-14-introducing-draft-pull-requests/ for further details.
 -->
+
 # Description
 
 <!-- What does this PR do? -->
 
 ## Type of change
+
 <!-- Check all that apply -->
+
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Refactor (non-breaking change which improves functionality)
 - [ ] Optimization (non-breaking change which improves performance)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Breaking change (fix or feature that would cause existing functionality to
+      not work as expected)
 - [ ] This change requires a documentation update
 
 # Added/Updated Tests

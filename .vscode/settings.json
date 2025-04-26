@@ -6,8 +6,5 @@
   "deno.lint": true,
   "css.customData": [
     ".vscode/tailwind.json"
-  ],
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  }
+  ]
 }
