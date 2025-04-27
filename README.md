@@ -26,9 +26,9 @@ To-Do List App featuring AI Suggestions
 
 [TypeScript](https://www.typescriptlang.org/docs/handbook/) -
 [Deno](https://docs.deno.com/runtime/) -
+[Deno Deploy](https://docs.deno.com/deploy/manual/) -
 [Fresh](https://fresh.deno.dev/docs/introduction) -
 [TailwindCSS](https://tailwindcss.com/docs/styling-with-utility-classes) -
-[AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) -
 [OpenAI API](https://platform.openai.com/docs/api-reference/introduction)
 
 ## Contributing
