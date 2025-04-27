@@ -31,12 +31,4 @@ To-Do List App featuring AI Suggestions
 [TailwindCSS](https://tailwindcss.com/docs/styling-with-utility-classes) -
 [OpenAI API](https://platform.openai.com/docs/api-reference/introduction)
 
-## Contributing
-
-### Setup
-
-1. Clone the repository
-2. [Install Deno](https://docs.deno.com/runtime/#install-deno) and
-   [setup your environment](https://docs.deno.com/runtime/getting_started/setup_your_environment/)
-3. Start developing with `deno task start`. This will watch the project
-   directory and restart as necessary.
+## [Contributing](CONTRIBUTING.md)
