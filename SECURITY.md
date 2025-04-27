@@ -11,7 +11,7 @@ While we make no security guarantees, if you discover what you believe to be a
 security vulnerability, you can:
 
 1. Open a regular issue in our GitHub issue tracker (recommended)
-2. Or send an email to wesleyschlenker@gmail.com
+2. Or send an email to <wesleyschlenker@gmail.com>
 
 ## Response Expectations
 
