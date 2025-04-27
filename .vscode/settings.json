@@ -6,5 +6,6 @@
   "deno.lint": true,
   "css.customData": [
     ".vscode/tailwind.json"
-  ]
+  ],
+  "editor.tabSize": 2
 }
