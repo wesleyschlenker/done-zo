@@ -32,5 +32,3 @@ jobs:
           project: "done-zo"
           entrypoint: "main.ts"
           root: "."
-          
-          
