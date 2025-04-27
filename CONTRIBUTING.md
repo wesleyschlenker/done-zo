@@ -174,9 +174,43 @@ done-zo/
 
 ### Commit Guidelines
 
-- Follow the [conventional commits](https://conventionalcommits.org) format
-- Reference issue numbers in commit messages when applicable
 - Keep commits focused and atomic
+- Reference issue numbers in commit message footer when applicable
+- Follow the [conventional commits](https://conventionalcommits.org) rules
+  - Use the following format for commit messages:
+
+    ```text
+    <type>(<scope>): <subject>
+
+    <optional body>
+
+    <optional footer>
+    ```
+
+  - | Type     | Description                  |
+    | -------- | ---------------------------- |
+    | build    | update to build system       |
+    | chore    | maintenance                  |
+    | ci       | continuous integration       |
+    | docs     | documentation                |
+    | feat     | new feature                  |
+    | fix      | bug fix                      |
+    | perf     | performance improvement      |
+    | refactor | code refactor                |
+    | revert   | revert to previous state     |
+    | style    | style changes                |
+    | test     | add, remove, or update tests |
+
+  - **Scope** may be provided to a commit’s type, to provide additional
+    contextual information and is contained within parenthesis, e.g.,
+    `feat(parser): add ability to parse arrays`.
+  - **Subject** is a short description of the changes, e.g.,
+    `add ability to parse arrays`.
+  - **Body** is an optional, more detailed description of the changes, e.g.,
+    `Adds new parser function to utils. Limited to 72 characters per line. Required for next major version.`.
+  - **Footer** is an optional section that can be used to reference issue
+    numbers, e.g., `Refs: #123`, or to indicate breaking changes, e.g.,
+    `BREAKING CHANGE: The parse function now returns an array of parsed values.`.
 
 ### Pull Request Process
 
