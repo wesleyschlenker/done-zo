@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Development Server",
+      "type": "shell",
+      "command": "deno task start",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "deno task build",
+      "group": "build",
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Preview Production",
+      "type": "shell",
+      "command": "deno task preview",
+      "group": "build",
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "deno test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Check Code",
+      "type": "shell",
+      "command": "deno task check",
+      "group": "test",
+      "problemMatcher": ["$deno"]
+    },
+    {
+      "label": "Update Fresh Framework",
+      "type": "shell",
+      "command": "deno task update",
+      "problemMatcher": ["$deno"]
+    }
+  ]
+}
