@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed to get the full commit history for commitlint
 
       - name: Setup Deno
         uses: denoland/setup-deno@v2
@@ -36,6 +38,9 @@ jobs:
 
       - name: Run linting
         run: deno lint
+
+      - name: Check commit messages
+        run: deno run -A npm:@commitlint/cli --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
 
       - name: Run tests
         run: deno test --coverage=coverage
