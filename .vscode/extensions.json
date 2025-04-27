@@ -8,6 +8,10 @@
     "davidanson.vscode-markdownlint",
     "bradlc.vscode-tailwindcss",
     "github.vscode-pull-request-github",
-    "github.vscode-github-actions"
+    "github.vscode-github-actions",
+    "eamodio.gitlens",
+    "hbenl.vscode-test-explorer",
+    "wix.vscode-import-cost",
+    "christian-kohler.path-intellisense"
   ]
 }
