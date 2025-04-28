@@ -83,6 +83,7 @@ done-zo/
 ### Code Style Guidelines
 
 - Follow TypeScript coding conventions
+- Use TSDoc for all functions and types
 - Use meaningful variable and function names
 - Write clear comments for complex logic
 - Follow the existing project structure
